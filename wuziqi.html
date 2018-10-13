@@ -1,0 +1,19 @@
+<!doctype html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>五子棋</title>
+  <script type="text/javascript" src="control/algorithm.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <div id="title"><b>五子棋</b></div>
+    <div id="buttons">
+        <input type="button" onclick="boardSize=parseInt(20);init();" name="Button" value="点击开始" class="bt">
+        &nbsp;&nbsp;
+        <input name=newgame onclick="setTimeout('resetGame()',100)" type=button value="重新开始" class="bt">
+        &nbsp;&nbsp;
+        <input name=autoplay onclick="setAutoplay()" type=button value="游戏演示" class="bt">
+    </div>
+    <div id="workspace" align="center" width="420px" height="420px"></div>
+</body>
+</html>
